@@ -11,36 +11,58 @@
 
 <h1 class="title">Anh Chương ❤️ Em Tẹo</h1>
 
-<div class="circle">
-    <div id="days">0</div>
-    <p>Days Together</p>
-</div>
-
-<div class="countdown">
-    <p id="meet"></p>
-</div>
-
-<div class="memory-section">
-
-<h2>Our Memories 📸</h2>
-
-<input type="file" id="upload" accept="image/*">
-
-<div id="gallery"></div>
+<div class="main-section">
 
 <div class="albums">
+<a href="2025.html" class="album-btn">💖 2025 Memories</a>
+<a href="2026.html" class="album-btn">💞 2026 Memories</a>
+</div>
 
-<button onclick="location.href='2025.html'">📸 2025 Album</button>
-
-<button onclick="location.href='2026.html'">📸 2026 Album</button>
-
+<div class="circle">
+<div id="days">0</div>
+<p>Days Together</p>
+<div id="timeSmall"></div>
 </div>
 
 </div>
 
-<footer>
-Made with ❤️ by Chuong
-</footer>
+<div class="meet-section">
+
+<a class="album-btn" onclick="toggleMeetInput()" style="cursor:pointer;">
+💌 Our Next Meeting
+</a>
+
+<div id="meetInputBox" class="meet-input-box">
+
+<input type="date" id="meetInput">
+
+<button class="album-btn small-btn" onclick="setMeetDate()">
+Save Our Date 💕
+</button>
+
+</div>
+
+
+<!-- PHOTO AREA -->
+
+<div class="photo-area">
+
+<div class="photo-card me">
+<img src="images/me.jpg" alt="Me">
+<p>Đây là anh Chương xấu xí bị ngố ❤️</p>
+</div>
+
+<div class="photo-card her">
+<img src="images/her.jpg" alt="Her">
+<p>Còn đây là em Tẹo người yêu xinh đẹp nhất thế giới của anh Chương ❤️</p>
+</div>
+
+<div class="photo-card us">
+<img src="images/TA.jpg" alt="TA">
+<p>Còn mình là Trúc Anh và mình chỉ biết cười hehe 💕</p>
+</div>
+
+</div>
 
 <script src="script.js"></script>
 

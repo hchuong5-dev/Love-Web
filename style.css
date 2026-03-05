@@ -12,17 +12,29 @@ color:white;
 font-size:40px;
 }
 
+/* main layout */
+
+.main-section{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+margin-top:40px;
+}
+
+/* circle counter */
+
 .circle{
 width:260px;
 height:260px;
 background:white;
 border-radius:50%;
-margin:60px auto;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 box-shadow:0 15px 30px rgba(0,0,0,0.2);
+position:relative;
 }
 
 #days{
@@ -36,51 +48,57 @@ margin:0;
 font-size:18px;
 }
 
+/* small hours minutes */
+
+#timeSmall{
+font-size:14px;
+color:#888;
+margin-top:6px;
+}
+
+/* countdown text */
+
 .countdown{
 font-size:22px;
 color:white;
 margin-bottom:30px;
 }
 
-.memory-section{
-margin-top:30px;
-}
+/* album buttons */
 
-#gallery{
+.albums{
+position:absolute;
+left:40px;
+top:200px;
 display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-padding:40px;
+flex-direction:column;
+gap:15px;
 }
 
-#gallery img{
-width:200px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-footer{
-margin-top:50px;
-padding:20px;
+.album-btn{
+text-decoration:none;
+background:linear-gradient(135deg,#ff6fa5,#ff4d88);
 color:white;
-}
-
-.albums button{
-background:#ff4d88;
-border:none;
-padding:12px 20px;
-margin:10px;
-border-radius:25px;
-color:white;
+padding:14px 26px;
+border-radius:30px;
 font-size:16px;
-cursor:pointer;
-transition:0.3s;
+font-weight:bold;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+transition:all 0.3s ease;
+display:inline-block;
+animation:lovePulse 3s infinite;
 }
 
-.albums button:hover{
-background:#ff2e72;
-transform:scale(1.05);
+.album-btn:hover{
+transform:scale(1.1);
+background:linear-gradient(135deg,#ff4d88,#ff2e72);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+@keyframes lovePulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
 }
 
 /* floating hearts */
@@ -112,4 +130,100 @@ opacity:1;
 transform:translateY(-10vh) scale(1.5);
 opacity:0;
 }
+}
+/* meet button */
+
+.meet-section{
+margin-top:20px;
+}
+
+.meet-input-box{
+margin-top:10px;
+display:none;
+}
+
+.meet-input-box input{
+padding:6px;
+border-radius:10px;
+border:none;
+}
+
+.small-btn{
+padding:8px 18px;
+font-size:14px;
+margin-left:10px;
+}
+
+/* couple photo section */
+
+.photo-area{
+position:relative;
+height:400px;
+margin-top:80px;
+}
+
+/* couple photo section */
+
+.photo-area{
+position:relative;
+height:650px;
+margin-top:80px;
+}
+
+/* photo cards */
+
+.photo-card{
+position:absolute;
+text-align:center;
+}
+
+/* bigger images */
+
+.photo-card img{
+width:320px;
+height:320px;
+object-fit:cover;
+border-radius:25px;
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+/* hover animation */
+
+.photo-card img:hover{
+transform:scale(1.05);
+}
+
+/* caption text */
+
+.photo-card p{
+color:white;
+margin-top:12px;
+font-size:18px;
+}
+
+/* positions */
+
+.me{
+left:15%;
+top:0;
+}
+
+.her{
+right:15%;
+top:0;
+}
+
+.us{
+left:50%;
+transform:translateX(-50%);
+top:380px;
+}
+
+/* footer */
+
+footer{
+margin-top:50px;
+padding:20px;
+color:white;
 }
