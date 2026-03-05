@@ -47,4 +47,34 @@ document.getElementById("gallery").appendChild(img);
 
 reader.readAsDataURL(file);
 
+
 });
+
+.hearts{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+}
+
+.heart{
+position:absolute;
+color:#ff4d88;
+font-size:20px;
+animation:floatUp linear infinite;
+}
+
+@keyframes floatUp{
+0%{
+transform:translateY(100vh) scale(1);
+opacity:1;
+}
+
+100%{
+transform:translateY(-10vh) scale(1.5);
+opacity:0;
+}
+}
