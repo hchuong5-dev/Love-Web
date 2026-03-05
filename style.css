@@ -227,3 +227,38 @@ margin-top:50px;
 padding:20px;
 color:white;
 }
+
+/* ===== MOBILE FORCE FIX ===== */
+
+@media (max-width:768px){
+
+.photo-area{
+display:flex !important;
+flex-direction:column !important;
+align-items:center !important;
+gap:40px !important;
+height:auto !important;
+margin-top:60px !important;
+}
+
+/* reset desktop positioning completely */
+
+.me,
+.her,
+.us{
+position:static !important;
+left:auto !important;
+right:auto !important;
+top:auto !important;
+transform:none !important;
+}
+
+/* make images responsive */
+
+.photo-card img{
+width:90% !important;
+max-width:320px !important;
+height:auto !important;
+}
+
+}
